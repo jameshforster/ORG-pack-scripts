@@ -4,7 +4,6 @@ var empty = <item:minecraft:air>;
 
 campfire.addRecipe("ap_vanilla_campfire_brick", <item:minecraft:brick>, <item:minecraft:clay_ball>, 0.7, 1200);
 campfire.addRecipe("ap_vanilla_campfire_charcoal", <item:minecraft:charcoal>, <tag:minecraft:logs_that_burn>, 0.7, 1200);
-campfire.addRecipe("ap_vanilla_campfire_iron", <item:minecraft:iron_nugget> * 3, <tag:forge:dusts/iron>, 0.7, 2400);
 
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_iron_ingot", <item:minecraft:iron_ingot>, [[<item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>],[<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],[<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>]], <tag:ages_api:hammers>);
 
@@ -12,7 +11,7 @@ FlintWorkbenchManager.INSTANCE.removeRecipe(<item:minecraft:furnace>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_furnace", <item:minecraft:furnace>, [[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>,<item:minecraft:iron_ingot>,<tag:forge:cobblestone>],[<item:minecraft:brick>,<item:minecraft:iron_ingot>,<item:minecraft:brick>]], <tag:ages_api:hammers>);
 
 craftingTable.removeRecipe(<item:minecraft:furnace>);
-craftingTable.addShaped("ap_vanilla_furnace", <item:minecraft:furnace>, [[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>,<item:minecraft:iron_ingot>,<tag:forge:cobblestone>],[<item:minecraft:brick>,<item:minecraft:iron_ingot>,<item:minecraft:brick>]]);
+craftingTable.addShaped("ap_vanilla_furnace", <item:minecraft:furnace>, [[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>,<tag:forge:ingots/bronze>,<tag:forge:cobblestone>],[<item:minecraft:brick>,<tag:forge:ingots/bronze>,<item:minecraft:brick>]]);
 
 FlintWorkbenchManager.INSTANCE.removeRecipe(<item:minecraft:crafting_table>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_crafting_table", <item:minecraft:crafting_table>, [[<tag:minecraft:wooden_slabs>,<tag:minecraft:wooden_slabs>,<tag:minecraft:wooden_slabs>],[<item:minecraft:iron_ingot>,<tag:minecraft:planks>,<item:minecraft:iron_ingot>],[<item:minecraft:iron_ingot>,<tag:minecraft:planks>,<item:minecraft:iron_ingot>]], <tag:ages_api:knifes>);
