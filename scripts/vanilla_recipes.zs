@@ -8,7 +8,7 @@ campfire.addRecipe("ap_vanilla_campfire_charcoal", <item:minecraft:charcoal>, <t
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_iron_ingot", <item:minecraft:iron_ingot>, [[<item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>],[<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],[<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>]], <tag:ages_api:hammers>);
 
 FlintWorkbenchManager.INSTANCE.removeRecipe(<item:minecraft:furnace>);
-FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_furnace", <item:minecraft:furnace>, [[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>,<item:minecraft:iron_ingot>,<tag:forge:cobblestone>],[<item:minecraft:brick>,<item:minecraft:iron_ingot>,<item:minecraft:brick>]], <tag:ages_api:hammers>);
+FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_furnace", <item:minecraft:furnace>, [[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>,<tag:forge:ingots/bronze>,<tag:forge:cobblestone>],[<item:minecraft:brick>,<tag:forge:ingots/bronze>,<item:minecraft:brick>]], <tag:ages_api:hammers>);
 
 craftingTable.removeRecipe(<item:minecraft:furnace>);
 craftingTable.addShaped("ap_vanilla_furnace", <item:minecraft:furnace>, [[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>,<tag:forge:ingots/bronze>,<tag:forge:cobblestone>],[<item:minecraft:brick>,<tag:forge:ingots/bronze>,<item:minecraft:brick>]]);

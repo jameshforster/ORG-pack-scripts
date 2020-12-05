@@ -53,3 +53,7 @@ FlintWorkbenchManager.INSTANCE.addRecipe("ap_stone_age_flint_grass_bed", <item:s
 
 FlintWorkbenchManager.INSTANCE.removeRecipe(<item:stone_age:stone_chest>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_stone_age_flint_stone_chest", <item:stone_age:stone_chest>, [[<item:minecraft:cobblestone_slab>, <item:minecraft:cobblestone_slab>, <item:minecraft:cobblestone_slab>],[<tag:forge:cobblestone>, <tag:forge:clay>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>]], <tag:ages_api:knifes>);
+
+FlintWorkbenchManager.INSTANCE.removeRecipe(<item:stone_age:thatch_block>);
+FlintWorkbenchManager.INSTANCE.addRecipe("ap_stone_age_flint_thatch_block", <item:stone_age:thatch_block>, [[<item:stone_age:dried_grass>,<item:stone_age:dried_grass>],[<item:stone_age:dried_grass>,<item:stone_age:dried_grass>]], <tag:ages_api:knifes>);
+craftingTable.addShapedMirrored("ap_stone_age_thatch_block", <item:stone_age:thatch_block>, [[<item:stone_age:dried_grass>,<item:stone_age:dried_grass>],[<item:stone_age:dried_grass>,<item:stone_age:dried_grass>]]);
