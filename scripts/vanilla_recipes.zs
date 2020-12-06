@@ -7,24 +7,24 @@ campfire.addRecipe("ap_vanilla_campfire_charcoal", <item:minecraft:charcoal>, <t
 
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_iron_ingot", <item:minecraft:iron_ingot>, [[<item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>],[<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],[<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>]], <tag:ages_api:hammers>);
 
-FlintWorkbenchManager.INSTANCE.removeRecipe(<item:minecraft:furnace>);
-FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_furnace", <item:minecraft:furnace>, [[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>,<tag:forge:ingots/bronze>,<tag:forge:cobblestone>],[<item:minecraft:brick>,<tag:forge:ingots/bronze>,<item:minecraft:brick>]], <tag:ages_api:hammers>);
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:minecraft:furnace>);
+FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_furnace", <item:minecraft:furnace>, [[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>,<item:minecraft:iron_ingot>,<tag:forge:cobblestone>],[<item:minecraft:brick>,<item:minecraft:iron_ingot>,<item:minecraft:brick>]], <tag:ages_api:hammers>);
 
 craftingTable.removeRecipe(<item:minecraft:furnace>);
-craftingTable.addShaped("ap_vanilla_furnace", <item:minecraft:furnace>, [[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>,<tag:forge:ingots/bronze>,<tag:forge:cobblestone>],[<item:minecraft:brick>,<tag:forge:ingots/bronze>,<item:minecraft:brick>]]);
+craftingTable.addShaped("ap_vanilla_furnace", <item:minecraft:furnace>, [[<tag:forge:cobblestone>, <tag:forge:cobblestone>, <tag:forge:cobblestone>],[<tag:forge:cobblestone>,<item:minecraft:iron_ingot>,<tag:forge:cobblestone>],[<item:minecraft:brick>,<item:minecraft:iron_ingot>,<item:minecraft:brick>]]);
 
-FlintWorkbenchManager.INSTANCE.removeRecipe(<item:minecraft:crafting_table>);
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:minecraft:crafting_table>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_crafting_table", <item:minecraft:crafting_table>, [[<tag:minecraft:wooden_slabs>,<tag:minecraft:wooden_slabs>,<tag:minecraft:wooden_slabs>],[<item:minecraft:iron_ingot>,<tag:minecraft:planks>,<item:minecraft:iron_ingot>],[<item:minecraft:iron_ingot>,<tag:minecraft:planks>,<item:minecraft:iron_ingot>]], <tag:ages_api:knifes>);
 craftingTable.addShaped("ap_vanilla_crafting_table", <item:minecraft:crafting_table>, [[<tag:minecraft:wooden_slabs>,<tag:minecraft:wooden_slabs>,<tag:minecraft:wooden_slabs>],[<item:minecraft:iron_ingot>,<tag:minecraft:planks>,<item:minecraft:iron_ingot>],[<item:minecraft:iron_ingot>,<tag:minecraft:planks>,<item:minecraft:iron_ingot>]]);
 
-FlintWorkbenchManager.INSTANCE.removeRecipe(<item:minecraft:campfire>);
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:minecraft:campfire>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_campfire", <item:minecraft:campfire>, [[empty,<tag:forge:rods/wooden>,empty],[<tag:forge:rods/wooden>,<item:stone_age:dried_grass>,<tag:forge:rods/wooden>],[<tag:minecraft:logs_that_burn>,<tag:minecraft:logs_that_burn>,<tag:minecraft:logs_that_burn>]], <tag:ages_api:knifes>);
 craftingTable.addShaped("ap_vanilla_campfire", <item:minecraft:campfire>, [[empty,<tag:forge:rods/wooden>,empty],[<tag:forge:rods/wooden>,<item:stone_age:dried_grass>,<tag:forge:rods/wooden>],[<tag:minecraft:logs_that_burn>,<tag:minecraft:logs_that_burn>,<tag:minecraft:logs_that_burn>]]);
 
-FlintWorkbenchManager.INSTANCE.removeRecipe(<item:minecraft:leather_helmet>);
-FlintWorkbenchManager.INSTANCE.removeRecipe(<item:minecraft:leather_chestplate>);
-FlintWorkbenchManager.INSTANCE.removeRecipe(<item:minecraft:leather_leggings>);
-FlintWorkbenchManager.INSTANCE.removeRecipe(<item:minecraft:leather_boots>);
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:minecraft:leather_helmet>);
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:minecraft:leather_chestplate>);
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:minecraft:leather_leggings>);
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:minecraft:leather_boots>);
 
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_leather_helmet", <item:minecraft:leather_helmet>, [[<tag:forge:leather>,<tag:forge:leather>,<tag:forge:leather>],[<tag:forge:leather>,empty,<tag:forge:leather>]], <tag:ages_api:knifes>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_leather_chestplate", <item:minecraft:leather_chestplate>, [[<tag:forge:leather>,empty,<tag:forge:leather>],[<tag:forge:leather>,<tag:forge:leather>,<tag:forge:leather>],[<tag:forge:leather>,<tag:forge:leather>,<tag:forge:leather>]], <tag:ages_api:knifes>);
