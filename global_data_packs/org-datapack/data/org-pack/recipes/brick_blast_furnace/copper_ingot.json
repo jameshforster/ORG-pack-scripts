@@ -1,5 +1,5 @@
 {
-  "type": "brickfurnace:smelting",
+  "type": "brickfurnace:blasting",
   "ingredient": {
     "tag": "forge:dusts/copper"
   },
@@ -7,5 +7,5 @@
     "item": "mekanism:ingot_copper"
   },
   "experience": 0.3,
-  "cookingtime": 200
+  "cookingtime": 400
 }

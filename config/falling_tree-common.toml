@@ -54,10 +54,10 @@ break_in_creative = false
 	#INFO: Only in INSTANTANEOUS mode.
 	#WARNING: If you are on a server, this either has to be set to 0 or every player should have the mod. Else they'll have a weird effect of breaking the block but the block is still there.
 	#Range: 0.0 ~ 50.0
-	speed_multiplicand = 0.0
+	speed_multiplicand = 1.0
 	#Additional list of tools that can be used to chop down a tree.
 	#INFO: Items marked with the axe tag will already be whitelisted.
-	whitelisted = []
+	whitelisted = ["#crafttweaker:axes"]
 	#Defines the number of times the damage is applied to the tool.
 	#ie: if set to 1 then breaking 5 logs will give 5 damage.
 	#ie: if set to 2 then breaking 5 logs will give 10 damage.

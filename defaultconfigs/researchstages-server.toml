@@ -1,0 +1,6 @@
+
+#Compatibility settings
+[compatibility]
+	#Enable or disable JEI functionality based on item and recipe restrictions
+	JEIFunctionalityEnabled = true
+

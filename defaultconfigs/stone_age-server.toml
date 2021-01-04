@@ -12,7 +12,7 @@
 	#Range: > 1
 	aqueductTickChanceBoneMealEffect = 200
 	#Disable use of vanilla crafting table until end of Stone Age
-	disableVanillaCraftingTable = true
+	disableVanillaCraftingTable = false
 	#Feeder area of breed effect
 	#Range: 0 ~ 15
 	feederEffectRange = 4
