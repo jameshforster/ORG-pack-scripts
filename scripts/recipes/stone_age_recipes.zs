@@ -3,6 +3,9 @@ import mods.stone_age.TanningRackManager;
 
 var empty = <item:minecraft:air>;
 
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:stone_age:grass_lead>);
+craftingTable.addShapeless("ap_grass_lead", <item:stone_age:grass_lead>, [<item:stone_age:dried_grass>]);
+
 craftingTable.addShapedMirrored("ap_stone_age_unlit_torch_grass", <item:stone_age:unlit_torch>, [[<item:stone_age:dried_grass>],[<tag:forge:rods/wooden>]]);
 craftingTable.addShapedMirrored("ap_stone_age_unlit_torch_coal", <item:stone_age:unlit_torch>*4, [[<tag:minecraft:coals>],[<tag:forge:rods/wooden>]]);
 
@@ -12,7 +15,7 @@ FlintWorkbenchManager.INSTANCE.addRecipe("ap_stone_age_tree_stump", <item:stone_
 <recipetype:stone_age:flint_workbench>.removeRecipe(<item:stone_age:stone_pickaxe>);
 <recipetype:stone_age:flint_workbench>.removeRecipe(<item:stone_age:stone_pickaxe_head>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_flint_stone_pickaxe_head", <item:stone_age:stone_pickaxe_head>, [[<item:minecraft:stone>,<item:minecraft:stone>,<item:minecraft:stone>]], <tag:ages_api:knifes>);
-craftingTable.addShapedMirrored("ap_stone_pickaxe_head", <item:stone_age:stone_pickaxe_head>, [[<item:minecraft:stone>,<item:minecraft:stone>,<item:minecraft:stone>]]);
+craftingTable.addShaped("ap_stone_pickaxe_head", <item:stone_age:stone_pickaxe_head>, [[<item:minecraft:stone>,<item:minecraft:stone>,<item:minecraft:stone>]]);
 craftingTable.addShapeless("ap_stone_pickaxe", <item:stone_age:stone_pickaxe>, [<item:stone_age:stone_pickaxe_head>,<tag:crafttweaker:bindings>,<tag:forge:rods/wooden>]);
 
 <recipetype:stone_age:flint_workbench>.removeRecipe(<item:stone_age:stone_axe>);
@@ -49,6 +52,18 @@ FlintWorkbenchManager.INSTANCE.addRecipe("ap_stone_age_flint_grass_bed", <item:s
 
 <recipetype:stone_age:flint_workbench>.removeRecipe(<item:stone_age:stone_chest>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_stone_age_flint_stone_chest", <item:stone_age:stone_chest>, [[<item:minecraft:stone_slab>, <item:minecraft:stone_slab>, <item:minecraft:stone_slab>],[<item:minecraft:stone>, <tag:forge:clay>, <item:minecraft:stone>],[<item:minecraft:stone>, <item:minecraft:stone>, <item:minecraft:stone>]], <tag:ages_api:knifes>);
+
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:stone_age:bone_pickaxe>);
+craftingTable.addShapeless("ap_bone_pickaxe", <item:stone_age:bone_pickaxe>, [<item:stone_age:bone_pickaxe_head>,<tag:crafttweaker:bindings>,<tag:forge:rods/wooden>]);
+
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:stone_age:bone_axe>);
+craftingTable.addShapeless("ap_bone_axe", <item:stone_age:bone_axe>, [<item:stone_age:bone_axe_head>,<tag:crafttweaker:bindings>,<tag:forge:rods/wooden>]);
+
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:stone_age:bone_shovel>);
+craftingTable.addShapeless("ap_bone_shovel", <item:stone_age:bone_shovel>, [<item:stone_age:bone_shovel_head>,<tag:crafttweaker:bindings>,<tag:forge:rods/wooden>]);
+
+<recipetype:stone_age:flint_workbench>.removeRecipe(<item:stone_age:bone_hoe>);
+craftingTable.addShapeless("ap_bone_hoe", <item:stone_age:bone_hoe>, [<item:stone_age:bone_hoe_head>,<tag:crafttweaker:bindings>,<tag:forge:rods/wooden>]);
 
 <recipetype:stone_age:flint_workbench>.removeRecipe(<item:stone_age:thatch_block>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_stone_age_flint_thatch_block", <item:stone_age:thatch_block>, [[<item:stone_age:dried_grass>,<item:stone_age:dried_grass>],[<item:stone_age:dried_grass>,<item:stone_age:dried_grass>]], <tag:ages_api:knifes>);

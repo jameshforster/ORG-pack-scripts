@@ -1,0 +1,417 @@
+{
+	id: 2,
+	filename: "getting_started",
+	order_index: 0,
+	title: "Primitive Works",
+	icon: "minecraft:stick",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -11.0d,
+			y: -3.5d,
+			id: 12,
+			tasks: [{
+				id: 13,
+				type: "item",
+				item: "minecraft:gravel"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -4.5d,
+			id: 14,
+			tasks: [{
+				id: 15,
+				type: "item",
+				item: "minecraft:flint"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -5.5d,
+			id: 16,
+			tasks: [{
+				id: 17,
+				type: "item",
+				item: "minecraft:stick"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -5.5d,
+			dependencies: [I;
+				14,
+				16
+			],
+			id: 18,
+			tasks: [{
+				id: 19,
+				type: "item",
+				item: {
+					id: "stone_age:flint_knife",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -3.5d,
+			dependencies: [I;
+				14,
+				12,
+				16
+			],
+			id: 20,
+			tasks: [{
+				id: 21,
+				type: "item",
+				item: "stone_age:flint_workbench"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -5.5d,
+			dependencies: [I;18],
+			hide: true,
+			dependency_requirement: "one_completed",
+			id: 22,
+			tasks: [{
+				id: 23,
+				type: "item",
+				item: "minecraft:grass"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -3.5d,
+			dependencies: [I;
+				20,
+				18
+			],
+			hide: true,
+			id: 24,
+			tasks: [{
+				id: 25,
+				type: "item",
+				item: "stone_age:drying_rack"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -5.5d,
+			dependencies: [I;
+				22,
+				24
+			],
+			hide: true,
+			id: 26,
+			tasks: [{
+				id: 27,
+				type: "item",
+				item: "stone_age:dried_grass"
+			}]
+		},
+		{
+			title: "Bones",
+			icon: "minecraft:bone",
+			x: -11.0d,
+			y: -2.0d,
+			id: 28,
+			tasks: [{
+				id: 29,
+				type: "item",
+				title: "Any ages_api:bones",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "ages_api:bones"
+					}
+				}
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -2.0d,
+			dependencies: [I;
+				28,
+				20
+			],
+			id: 33,
+			tasks: [{
+				id: 34,
+				type: "item",
+				item: {
+					id: "stone_age:bone_axe_head",
+					Count: true,
+					tag: {
+						additionalModifiers: {}
+					}
+				}
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -3.5d,
+			dependencies: [I;26],
+			hide: true,
+			id: 35,
+			tasks: [{
+				id: 36,
+				type: "item",
+				item: "stone_age:grass_lead"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -2.0d,
+			dependencies: [I;
+				35,
+				33
+			],
+			hide: true,
+			id: 37,
+			tasks: [{
+				id: 38,
+				type: "item",
+				item: {
+					id: "stone_age:bone_axe",
+					Count: true,
+					tag: {
+						Damage: 0,
+						additionalModifiers: {}
+					}
+				}
+			}]
+		},
+		{
+			title: "Logs",
+			icon: "minecraft:oak_log",
+			x: -3.0d,
+			y: -2.0d,
+			dependencies: [I;37],
+			hide: true,
+			id: 39,
+			tasks: [{
+				id: 40,
+				type: "item",
+				title: "Any minecraft:logs",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -2.0d,
+			dependencies: [I;39],
+			hide: true,
+			id: 41,
+			tasks: [{
+				id: 42,
+				type: "item",
+				item: "stone_age:dried_grass_bed"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -3.5d,
+			dependencies: [I;39],
+			hide: true,
+			id: 43,
+			tasks: [{
+				id: 44,
+				type: "item",
+				item: "minecraft:campfire"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -5.5d,
+			dependencies: [I;
+				47,
+				43
+			],
+			hide: true,
+			id: 45,
+			tasks: [{
+				id: 46,
+				type: "item",
+				item: "minecraft:brick"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -7.5d,
+			id: 47,
+			tasks: [{
+				id: 48,
+				type: "item",
+				item: "minecraft:clay_ball"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -5.5d,
+			dependencies: [I;45],
+			hide: true,
+			id: 49,
+			tasks: [{
+				id: 50,
+				type: "item",
+				item: "brickfurnace:brick_furnace"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -7.5d,
+			dependencies: [I;26],
+			hide: true,
+			id: 52,
+			tasks: [{
+				id: 53,
+				type: "item",
+				item: "stone_age:thatch_block"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -3.5d,
+			dependencies: [I;35],
+			hide: true,
+			id: 54,
+			tasks: [{
+				id: 55,
+				type: "item",
+				item: {
+					id: "stone_age:flint_spear",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -1.0d,
+			dependencies: [I;
+				28,
+				20
+			],
+			id: 56,
+			tasks: [{
+				id: 57,
+				type: "item",
+				item: {
+					id: "stone_age:bone_pickaxe_head",
+					Count: true,
+					tag: {
+						additionalModifiers: {}
+					}
+				}
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -1.0d,
+			dependencies: [I;56],
+			id: 58,
+			tasks: [{
+				id: 59,
+				type: "item",
+				item: {
+					id: "stone_age:bone_pickaxe",
+					Count: true,
+					tag: {
+						Damage: 0,
+						additionalModifiers: {}
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -1.0d,
+			dependencies: [I;58],
+			hide: true,
+			id: 60,
+			tasks: [{
+				id: 61,
+				type: "item",
+				item: "minecraft:cobblestone"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -3.5d,
+			shape: "diamond",
+			dependencies: [I;
+				49,
+				60
+			],
+			id: 62,
+			tasks: [{
+				id: 63,
+				type: "item",
+				item: "minecraft:stone"
+			}],
+			rewards: [{
+				id: 64,
+				type: "gamestage",
+				icon: {
+					id: "stone_age:stone_pickaxe",
+					Count: true,
+					tag: {
+						Damage: 0,
+						additionalModifiers: {}
+					}
+				},
+				auto: "invisible",
+				stage: "stoneworking"
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -7.0d,
+			dependencies: [I;20],
+			id: 65,
+			tasks: [{
+				id: 66,
+				type: "item",
+				item: "stone_age:tanning_rack"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -7.0d,
+			id: 67,
+			tasks: [{
+				id: 68,
+				type: "item",
+				item: "stone_age:raw_hide"
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -8.5d,
+			dependencies: [I;
+				65,
+				67
+			],
+			id: 69,
+			tasks: [{
+				id: 70,
+				type: "item",
+				item: "minecraft:leather"
+			}]
+		}
+	]
+}

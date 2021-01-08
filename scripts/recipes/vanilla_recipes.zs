@@ -1,8 +1,11 @@
 import mods.stone_age.FlintWorkbenchManager;
 
 var empty = <item:minecraft:air>;
+
 campfire.addRecipe("ap_vanilla_campfire_brick", <item:minecraft:brick>, <item:minecraft:clay_ball>, 0.7, 1200);
 campfire.addRecipe("ap_vanilla_campfire_charcoal", <item:minecraft:charcoal>, <tag:minecraft:logs_that_burn>, 0.7, 1200);
+
+craftingTable.addShapeless("ap_vanilla_flint", <item:minecraft:flint>, [<tag:forge:gravel>]);
 
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_iron_ingot", <item:minecraft:iron_ingot>, [[<item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>],[<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],[<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>]], <tag:ages_api:hammers>);
 
