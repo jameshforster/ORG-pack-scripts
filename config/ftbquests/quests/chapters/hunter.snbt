@@ -1,0 +1,212 @@
+{
+	id: 7,
+	filename: "hunter",
+	order_index: 0,
+	title: "Leatherworking",
+	icon: "minecraft:leather",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -8.0d,
+			y: 0.0d,
+			dependencies: [I;32],
+			hide: true,
+			id: 8,
+			tasks: [{
+				id: 9,
+				type: "item",
+				item: "minecraft:leather"
+			}]
+		},
+		{
+			x: -6.5d,
+			y: 0.0d,
+			dependencies: [I;8],
+			hide: true,
+			id: 10,
+			tasks: [{
+				id: 11,
+				type: "item",
+				item: "stone_age:leather_strip"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: 0.0d,
+			dependencies: [I;20],
+			id: 30,
+			tasks: [{
+				id: 31,
+				type: "item",
+				item: "stone_age:raw_hide"
+			}],
+			rewards: [{
+				id: 65,
+				type: "gamestage",
+				icon: "minecraft:leather",
+				auto: "invisible",
+				stage: "leatherworking"
+			}]
+		},
+		{
+			x: -9.5d,
+			y: 0.0d,
+			dependencies: [I;30],
+			hide: true,
+			id: 32,
+			tasks: [{
+				id: 51,
+				type: "item",
+				item: "stone_age:tanning_rack"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: 0.0d,
+			dependencies: [I;10],
+			hide: true,
+			id: 66,
+			tasks: [{
+				id: 67,
+				type: "item",
+				item: "minecraft:lead"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 0.0d,
+			dependencies: [I;66],
+			hide: true,
+			id: 68,
+			tasks: [{
+				id: 69,
+				type: "item",
+				item: {
+					id: "stone_age:backpack",
+					Count: true,
+					tag: {
+						backpack: {
+							inv: {
+								Items: [
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									},
+									{
+										id: "minecraft:air",
+										Count: true
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+		},
+		{
+			title: "Leather Armour",
+			x: -8.0d,
+			y: -1.5d,
+			dependencies: [I;8],
+			id: 128,
+			tasks: [
+				{
+					id: 129,
+					type: "item",
+					item: {
+						id: "minecraft:leather_helmet",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 130,
+					type: "item",
+					item: {
+						id: "minecraft:leather_chestplate",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 131,
+					type: "item",
+					item: {
+						id: "minecraft:leather_leggings",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 132,
+					type: "item",
+					item: {
+						id: "minecraft:leather_boots",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+}

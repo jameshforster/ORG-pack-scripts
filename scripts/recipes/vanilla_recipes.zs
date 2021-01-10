@@ -35,3 +35,5 @@ FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_leather_boots", <item
 
 craftingTable.removeRecipe(<item:minecraft:chest>);
 craftingTable.addShaped("ap_vanilla_chest", <item:minecraft:chest>, [[<tag:minecraft:planks>,<tag:minecraft:planks>,<tag:minecraft:planks>],[<tag:minecraft:planks>,<item:minecraft:iron_ingot>,<tag:minecraft:planks>],[<tag:minecraft:planks>,<tag:minecraft:planks>,<tag:minecraft:planks>]]);
+
+craftingTable.addShaped("ap_vanilla_lead", <item:minecraft:lead>, [[<item:stone_age:leather_strip>, <item:stone_age:leather_strip>], [<item:stone_age:leather_strip>, empty, <item:stone_age:leather_strip>], [empty, <item:stone_age:leather_strip>, <item:stone_age:leather_strip>]]);

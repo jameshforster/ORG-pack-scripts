@@ -1,0 +1,233 @@
+{
+	id: 75,
+	filename: "stone_age",
+	order_index: 0,
+	title: "Stone Age",
+	icon: {
+		id: "stone_age:stone_hammer",
+		Count: true,
+		tag: {
+			Damage: 0
+		}
+	},
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -7.5d,
+			y: -3.0d,
+			id: 76,
+			tasks: [{
+				id: 77,
+				type: "item",
+				item: {
+					id: "stone_age:stone_hammer",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -4.5d,
+			id: 78,
+			tasks: [{
+				id: 79,
+				type: "item",
+				item: "stone_age:tree_stump"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -7.5d,
+			id: 80,
+			tasks: [{
+				id: 81,
+				type: "item",
+				item: {
+					id: "stone_age:stone_axe_head",
+					Count: true,
+					tag: {
+						additionalModifiers: {}
+					}
+				}
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -6.0d,
+			id: 82,
+			tasks: [{
+				id: 83,
+				type: "item",
+				item: {
+					id: "stone_age:stone_pickaxe_head",
+					Count: true,
+					tag: {
+						additionalModifiers: {}
+					}
+				}
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -9.0d,
+			id: 86,
+			tasks: [{
+				id: 87,
+				type: "item",
+				item: {
+					id: "stone_age:stone_shovel_head",
+					Count: true,
+					tag: {
+						additionalModifiers: {}
+					}
+				}
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -9.0d,
+			dependencies: [I;86],
+			id: 88,
+			tasks: [{
+				id: 89,
+				type: "item",
+				item: {
+					id: "stone_age:stone_shovel",
+					Count: true,
+					tag: {
+						Damage: 0,
+						additionalModifiers: {}
+					}
+				}
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -6.0d,
+			dependencies: [I;82],
+			id: 90,
+			tasks: [{
+				id: 91,
+				type: "item",
+				item: {
+					id: "stone_age:stone_pickaxe",
+					Count: true,
+					tag: {
+						Damage: 0,
+						additionalModifiers: {}
+					}
+				}
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -7.5d,
+			dependencies: [I;80],
+			id: 92,
+			tasks: [{
+				id: 93,
+				type: "item",
+				item: {
+					id: "stone_age:stone_axe",
+					Count: true,
+					tag: {
+						Damage: 0,
+						additionalModifiers: {}
+					}
+				}
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -6.0d,
+			dependencies: [I;90],
+			id: 94,
+			tasks: [
+				{
+					id: 95,
+					type: "item",
+					item: "mekanism:tin_ore"
+				},
+				{
+					id: 114,
+					type: "item",
+					item: "mekanism:copper_ore"
+				}
+			]
+		},
+		{
+			x: -3.0d,
+			y: -4.5d,
+			shape: "diamond",
+			dependencies: [I;
+				94,
+				78,
+				76
+			],
+			id: 104,
+			tasks: [
+				{
+					id: 106,
+					type: "item",
+					item: "mekanism:dust_tin"
+				},
+				{
+					id: 116,
+					type: "item",
+					item: "mekanism:dust_copper"
+				}
+			],
+			rewards: [{
+				id: 115,
+				type: "gamestage",
+				auto: "invisible",
+				stage: "primitive Alloying"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -4.5d,
+			dependencies: [I;104],
+			id: 107,
+			tasks: [{
+				id: 108,
+				type: "item",
+				item: "mekanism:dust_bronze"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -6.0d,
+			dependencies: [I;104],
+			id: 109,
+			tasks: [
+				{
+					id: 110,
+					type: "item",
+					item: "mekanism:ingot_copper"
+				},
+				{
+					id: 113,
+					type: "item",
+					item: "mekanism:ingot_tin"
+				}
+			]
+		},
+		{
+			icon: "mekanism:ingot_bronze",
+			x: 0.0d,
+			y: -4.5d,
+			dependencies: [I;107],
+			id: 117,
+			tasks: [{
+				id: 118,
+				type: "gamestage",
+				title: "Bronze Smithing Research",
+				stage: "bronzesmithing"
+			}]
+		}
+	]
+}

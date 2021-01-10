@@ -2,47 +2,37 @@
 	id: 2,
 	filename: "getting_started",
 	order_index: 0,
-	title: "Primitive Works",
+	title: "Primitive Era",
 	icon: "minecraft:stick",
 	default_quest_shape: "",
 	quests: [
 		{
+			title: "Primitive Resources",
 			x: -11.0d,
 			y: -3.5d,
-			id: 12,
-			tasks: [{
-				id: 13,
-				type: "item",
-				item: "minecraft:gravel"
-			}]
-		},
-		{
-			x: -11.0d,
-			y: -4.5d,
-			id: 14,
-			tasks: [{
-				id: 15,
-				type: "item",
-				item: "minecraft:flint"
-			}]
-		},
-		{
-			x: -11.0d,
-			y: -5.5d,
 			id: 16,
-			tasks: [{
-				id: 17,
-				type: "item",
-				item: "minecraft:stick"
-			}]
+			tasks: [
+				{
+					id: 17,
+					type: "item",
+					item: "minecraft:stick"
+				},
+				{
+					id: 121,
+					type: "item",
+					item: "minecraft:flint"
+				},
+				{
+					id: 122,
+					type: "item",
+					item: "minecraft:gravel"
+				}
+			]
 		},
 		{
-			x: -9.0d,
-			y: -5.5d,
-			dependencies: [I;
-				14,
-				16
-			],
+			x: -9.5d,
+			y: -4.0d,
+			dependencies: [I;16],
 			id: 18,
 			tasks: [{
 				id: 19,
@@ -57,13 +47,9 @@
 			}]
 		},
 		{
-			x: -9.0d,
-			y: -3.5d,
-			dependencies: [I;
-				14,
-				12,
-				16
-			],
+			x: -9.5d,
+			y: -3.0d,
+			dependencies: [I;16],
 			id: 20,
 			tasks: [{
 				id: 21,
@@ -72,8 +58,8 @@
 			}]
 		},
 		{
-			x: -7.0d,
-			y: -5.5d,
+			x: -8.0d,
+			y: -4.0d,
 			dependencies: [I;18],
 			hide: true,
 			dependency_requirement: "one_completed",
@@ -85,8 +71,8 @@
 			}]
 		},
 		{
-			x: -7.0d,
-			y: -3.5d,
+			x: -8.0d,
+			y: -3.0d,
 			dependencies: [I;
 				20,
 				18
@@ -100,8 +86,8 @@
 			}]
 		},
 		{
-			x: -5.0d,
-			y: -5.5d,
+			x: -6.5d,
+			y: -4.0d,
 			dependencies: [I;
 				22,
 				24
@@ -118,7 +104,7 @@
 			title: "Bones",
 			icon: "minecraft:bone",
 			x: -11.0d,
-			y: -2.0d,
+			y: -1.0d,
 			id: 28,
 			tasks: [{
 				id: 29,
@@ -134,11 +120,12 @@
 			}]
 		},
 		{
-			x: -9.0d,
+			x: -9.5d,
 			y: -2.0d,
 			dependencies: [I;
 				28,
-				20
+				20,
+				18
 			],
 			id: 33,
 			tasks: [{
@@ -154,8 +141,8 @@
 			}]
 		},
 		{
-			x: -5.0d,
-			y: -3.5d,
+			x: -6.5d,
+			y: -3.0d,
 			dependencies: [I;26],
 			hide: true,
 			id: 35,
@@ -166,7 +153,7 @@
 			}]
 		},
 		{
-			x: -5.0d,
+			x: -6.5d,
 			y: -2.0d,
 			dependencies: [I;
 				35,
@@ -190,7 +177,7 @@
 		{
 			title: "Logs",
 			icon: "minecraft:oak_log",
-			x: -3.0d,
+			x: -3.5d,
 			y: -2.0d,
 			dependencies: [I;37],
 			hide: true,
@@ -209,7 +196,7 @@
 			}]
 		},
 		{
-			x: -1.0d,
+			x: -2.0d,
 			y: -2.0d,
 			dependencies: [I;39],
 			hide: true,
@@ -221,8 +208,8 @@
 			}]
 		},
 		{
-			x: -3.0d,
-			y: -3.5d,
+			x: -3.5d,
+			y: -3.0d,
 			dependencies: [I;39],
 			hide: true,
 			id: 43,
@@ -233,8 +220,8 @@
 			}]
 		},
 		{
-			x: -3.0d,
-			y: -5.5d,
+			x: -3.5d,
+			y: -4.0d,
 			dependencies: [I;
 				47,
 				43
@@ -248,8 +235,8 @@
 			}]
 		},
 		{
-			x: -3.0d,
-			y: -7.5d,
+			x: -3.5d,
+			y: -5.0d,
 			id: 47,
 			tasks: [{
 				id: 48,
@@ -258,8 +245,8 @@
 			}]
 		},
 		{
-			x: -1.0d,
-			y: -5.5d,
+			x: -2.0d,
+			y: -4.0d,
 			dependencies: [I;45],
 			hide: true,
 			id: 49,
@@ -270,8 +257,8 @@
 			}]
 		},
 		{
-			x: -5.0d,
-			y: -7.5d,
+			x: -6.5d,
+			y: -5.0d,
 			dependencies: [I;26],
 			hide: true,
 			id: 52,
@@ -282,8 +269,8 @@
 			}]
 		},
 		{
-			x: -4.0d,
-			y: -3.5d,
+			x: -5.0d,
+			y: -3.0d,
 			dependencies: [I;35],
 			hide: true,
 			id: 54,
@@ -300,11 +287,12 @@
 			}]
 		},
 		{
-			x: -9.0d,
+			x: -9.5d,
 			y: -1.0d,
 			dependencies: [I;
 				28,
-				20
+				20,
+				18
 			],
 			id: 56,
 			tasks: [{
@@ -320,9 +308,12 @@
 			}]
 		},
 		{
-			x: -5.0d,
+			x: -6.5d,
 			y: -1.0d,
-			dependencies: [I;56],
+			dependencies: [I;
+				56,
+				35
+			],
 			id: 58,
 			tasks: [{
 				id: 59,
@@ -338,7 +329,7 @@
 			}]
 		},
 		{
-			x: -1.0d,
+			x: -2.0d,
 			y: -1.0d,
 			dependencies: [I;58],
 			hide: true,
@@ -350,8 +341,8 @@
 			}]
 		},
 		{
-			x: 1.0d,
-			y: -3.5d,
+			x: -0.5d,
+			y: -2.5d,
 			shape: "diamond",
 			dependencies: [I;
 				49,
@@ -379,38 +370,60 @@
 			}]
 		},
 		{
-			x: -8.0d,
-			y: -7.0d,
-			dependencies: [I;20],
-			id: 65,
+			title: "Thatch Building",
+			x: -6.5d,
+			y: -6.0d,
+			dependencies: [I;52],
+			id: 3,
+			tasks: [
+				{
+					id: 4,
+					type: "item",
+					item: "stone_age:thatch_stairs"
+				},
+				{
+					id: 127,
+					type: "item",
+					item: "stone_age:thatch_slab"
+				}
+			]
+		},
+		{
+			x: -9.5d,
+			y: 0.0d,
+			dependencies: [I;28],
+			id: 123,
 			tasks: [{
-				id: 66,
+				id: 124,
 				type: "item",
-				item: "stone_age:tanning_rack"
+				item: {
+					id: "stone_age:bone_shovel_head",
+					Count: true,
+					tag: {
+						additionalModifiers: {}
+					}
+				}
 			}]
 		},
 		{
-			x: -11.0d,
-			y: -7.0d,
-			id: 67,
-			tasks: [{
-				id: 68,
-				type: "item",
-				item: "stone_age:raw_hide"
-			}]
-		},
-		{
-			x: -8.0d,
-			y: -8.5d,
+			x: -6.5d,
+			y: 0.0d,
 			dependencies: [I;
-				65,
-				67
+				123,
+				35
 			],
-			id: 69,
+			id: 125,
 			tasks: [{
-				id: 70,
+				id: 126,
 				type: "item",
-				item: "minecraft:leather"
+				item: {
+					id: "stone_age:bone_shovel",
+					Count: true,
+					tag: {
+						Damage: 0,
+						additionalModifiers: {}
+					}
+				}
 			}]
 		}
 	]
