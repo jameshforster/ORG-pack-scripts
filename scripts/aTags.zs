@@ -1,8 +1,26 @@
-<tag:ages_api:axes>.removeItems([<item:stone_age:stone_axe>, <item:stone_age:bone_axe>, <item:minecraft:stone_axe>, <item:minecraft:wooden_axe>]);
-<tag:ages_api:axes>.addItems([<item:mekanismtools:bronze_axe>, <item:minecraft:netherite_axe>, <item:mekanismtools:lapis_lazuli_axe>, <item:mekanismtools:osmium_axe>, <item:mekanismtools:refined_obsidian_axe>, <item:mekanismtools:steel_axe>]);
+<tag:items:ages_api:axes>.remove(<item:stone_age:stone_axe>);
+<tag:items:ages_api:axes>.remove(<item:stone_age:bone_axe>);
+<tag:items:ages_api:axes>.remove(<item:minecraft:stone_axe>);
+<tag:items:ages_api:axes>.remove(<item:minecraft:wooden_axe>);
 
-<tag:crafttweaker:bindings>.createItemTag();
-<tag:crafttweaker:bindings>.addItems([<item:stone_age:leather_strip>, <item:stone_age:grass_lead>, <item:minecraft:string>]);
+<tag:items:ages_api:axes>.add(<item:mekanismtools:bronze_axe>);
+<tag:items:ages_api:axes>.add(<item:minecraft:netherite_axe>);
+<tag:items:ages_api:axes>.add(<item:mekanismtools:lapis_lazuli_axe>);
+<tag:items:ages_api:axes>.add(<item:mekanismtools:osmium_axe>);
+<tag:items:ages_api:axes>.add(<item:mekanismtools:refined_obsidian_axe>);
+<tag:items:ages_api:axes>.add(<item:mekanismtools:steel_axe>);
 
-<tag:crafttweaker:axes>.createItemTag();
-<tag:crafttweaker:axes>.addItems([<item:mekanismtools:bronze_axe>, <item:minecraft:netherite_axe>, <item:mekanismtools:lapis_lazuli_axe>, <item:mekanismtools:osmium_axe>, <item:mekanismtools:refined_obsidian_axe>, <item:mekanismtools:steel_axe>, <item:stone_age:stone_axe>, <item:stone_age:bone_axe>, <item:minecraft:stone_axe>, <item:minecraft:wooden_axe>]);
+<tag:items:crafttweaker:bindings>.add(<item:stone_age:leather_strip>);
+<tag:items:crafttweaker:bindings>.add(<item:stone_age:grass_lead>);
+<tag:items:crafttweaker:bindings>.add(<item:minecraft:string>);
+
+<tag:items:crafttweaker:axes>.add(<item:mekanismtools:bronze_axe>);
+<tag:items:crafttweaker:axes>.add(<item:minecraft:netherite_axe>);
+<tag:items:crafttweaker:axes>.add(<item:mekanismtools:lapis_lazuli_axe>);
+<tag:items:crafttweaker:axes>.add(<item:mekanismtools:osmium_axe>);
+<tag:items:crafttweaker:axes>.add(<item:mekanismtools:refined_obsidian_axe>);
+<tag:items:crafttweaker:axes>.add(<item:mekanismtools:steel_axe>);
+<tag:items:crafttweaker:axes>.add(<item:stone_age:stone_axe>);
+<tag:items:crafttweaker:axes>.add(<item:stone_age:bone_axe>);
+<tag:items:crafttweaker:axes>.add(<item:minecraft:stone_axe>);
+<tag:items:crafttweaker:axes>.add(<item:minecraft:wooden_axe>);

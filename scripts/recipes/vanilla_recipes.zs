@@ -2,12 +2,14 @@ import mods.stone_age.FlintWorkbenchManager;
 
 var empty = <item:minecraft:air>;
 
-campfire.addRecipe("ap_vanilla_campfire_brick", <item:minecraft:brick>, <item:minecraft:clay_ball>, 0.7, 1200);
-campfire.addRecipe("ap_vanilla_campfire_charcoal", <item:minecraft:charcoal>, <tag:minecraft:logs_that_burn>, 0.7, 1200);
+craftingTable.addShapeless("ap_ct_flint", <item:minecraft:flint>, [<tag:items:forge:gravel>]);
 
-craftingTable.addShapeless("ap_vanilla_flint", <item:minecraft:flint>, [<tag:forge:gravel>]);
+FlintWorkbenchManager.INSTANCE.addRecipe("ap_fw_flint_axe", <item:minecraft:wooden_axe>, [[<item:minecraft:flint>, <item:minecraft:flint>, <tag:items:crafttweaker:bindings>],[<item:minecraft:flint>, <tag:items:forge:rods/wooden>],[empty, <tag:items:forge:rods/wooden>]], <item:stone_age:flint_knife>);
+FlintWorkbenchManager.INSTANCE.addRecipe("ap_fw_flint_pickaxe", <item:minecraft:wooden_pickaxe>, [[<item:minecraft:flint>, <item:minecraft:flint>, <item:minecraft:flint>],[<tag:items:crafttweaker:bindings>, <tag:items:forge:rods/wooden>],[empty, <tag:items:forge:rods/wooden>]], <item:stone_age:flint_knife>);
 
-FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_iron_ingot", <item:minecraft:iron_ingot>, [[<item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>],[<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],[<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>]], <tag:ages_api:hammers>);
+craftingTable.addShapeless("ap_ct_sticks", <item:minecraft:stick>*4, [<tag:items:minecraft:logs>]);
+
+/*
 
 <recipetype:stone_age:flint_workbench>.removeRecipe(<item:minecraft:furnace>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_vanilla_flint_furnace", <item:minecraft:furnace>, [[<item:minecraft:stone>, <item:minecraft:stone>, <item:minecraft:stone>],[<item:minecraft:stone>,<item:minecraft:iron_ingot>,<item:minecraft:stone>],[<item:minecraft:brick>,<item:minecraft:iron_ingot>,<item:minecraft:brick>]], <tag:ages_api:hammers>);
@@ -37,3 +39,4 @@ craftingTable.removeRecipe(<item:minecraft:chest>);
 craftingTable.addShaped("ap_vanilla_chest", <item:minecraft:chest>, [[<tag:minecraft:planks>,<tag:minecraft:planks>,<tag:minecraft:planks>],[<tag:minecraft:planks>,<item:minecraft:iron_ingot>,<tag:minecraft:planks>],[<tag:minecraft:planks>,<tag:minecraft:planks>,<tag:minecraft:planks>]]);
 
 craftingTable.addShaped("ap_vanilla_lead", <item:minecraft:lead>, [[<item:stone_age:leather_strip>, <item:stone_age:leather_strip>], [<item:stone_age:leather_strip>, empty, <item:stone_age:leather_strip>], [empty, <item:stone_age:leather_strip>, <item:stone_age:leather_strip>]]);
+*/

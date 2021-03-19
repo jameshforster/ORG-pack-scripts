@@ -1,7 +1,7 @@
 import mods.stone_age.TreeStumpManager;
 import mods.stone_age.FlintWorkbenchManager;
 
-var empty = <item:minecraft:air>;
+/* var empty = <item:minecraft:air>;
 
 TreeStumpManager.INSTANCE.addRecipe("ap_mekanism_copper_dust", <item:mekanism:dust_copper>, <tag:ages_api:hammers>, <tag:forge:ores/copper>, 5, "");
 TreeStumpManager.INSTANCE.addRecipe("ap_mekanism_tin_dust", <item:mekanism:dust_tin>, <tag:ages_api:hammers>, <tag:forge:ores/tin>, 5);
@@ -18,3 +18,4 @@ FlintWorkbenchManager.INSTANCE.addRecipe("ap_mekanism_bronze_chestplate", <item:
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_mekanism_bronze_leggings", <item:mekanismtools:bronze_leggings>, [[<tag:forge:ingots/bronze>,<tag:forge:ingots/bronze>,<tag:forge:ingots/bronze>],[<tag:forge:ingots/bronze>,empty,<tag:forge:ingots/bronze>],[<tag:forge:ingots/bronze>,empty,<tag:forge:ingots/bronze>]], <tag:ages_api:hammers>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_mekanism_bronze_boots", <item:mekanismtools:bronze_boots>, [[<tag:forge:ingots/bronze>,empty,<tag:forge:ingots/bronze>],[<tag:forge:ingots/bronze>,empty,<tag:forge:ingots/bronze>]], <tag:ages_api:hammers>);
 FlintWorkbenchManager.INSTANCE.addRecipe("ap_mekanism_bronze_shield", <item:mekanismtools:bronze_shield>, [[<tag:forge:ingots/bronze>,<item:minecraft:shield>,<tag:forge:ingots/bronze>],[<tag:forge:ingots/bronze>,<tag:forge:ingots/bronze>,<tag:forge:ingots/bronze>],[empty,<tag:forge:ingots/bronze>]], <tag:ages_api:hammers>);
+*/

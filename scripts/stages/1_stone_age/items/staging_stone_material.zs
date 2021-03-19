@@ -1,1 +1,1 @@
-mods.ResearchStages.addItemStage("stoneworking", <item:minecraft:stone>);
+//mods.ResearchStages.addItemStage("stoneworking", <item:minecraft:stone>);
