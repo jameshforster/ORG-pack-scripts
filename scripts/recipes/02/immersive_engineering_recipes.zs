@@ -1,0 +1,5 @@
+import mods.stone_age.FlintWorkbenchManager;
+
+craftingTable.removeRecipe(<item:immersiveengineering:hammer>);
+craftingTable.addShapedMirrored("ap_ct_immersiveengineering_hammer", <item:immersiveengineering:hammer>, [[<item:minecraft:air>, <item:minecraft:iron_ingot>, <tag:items:crafttweaker:bindings>],[<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:minecraft:iron_ingot>],[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>]]);
+FlintWorkbenchManager.INSTANCE.addRecipe("ap_fw_flint_immersiveengineering_hammer", <item:immersiveengineering:hammer>, [[<item:minecraft:air>, <item:minecraft:iron_ingot>, <tag:items:crafttweaker:bindings>],[<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:minecraft:iron_ingot>],[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>]], <tag:items:ages_api:hammers>);

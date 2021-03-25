@@ -24,3 +24,6 @@
 <tag:items:crafttweaker:axes>.add(<item:stone_age:bone_axe>);
 <tag:items:crafttweaker:axes>.add(<item:minecraft:stone_axe>);
 <tag:items:crafttweaker:axes>.add(<item:minecraft:wooden_axe>);
+
+<tag:items:crafttweaker:creosote_bucket>.add(<item:immersiveengineering:creosote_bucket>);
+<tag:items:crafttweaker:creosote_bucket>.add(<item:charcoal_pit:creosote_bucket>);
