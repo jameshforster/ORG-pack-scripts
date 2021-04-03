@@ -1,0 +1,4 @@
+mods.ResearchStages.admin.triggerBookWriter("research_compendium", "Research Compendium", "Your guide to research and discovery!", 1);
+mods.ResearchStages.admin.triggerCategoryWriter("research_compendium", "01_research_primitive_category", "Primitive Research", "Early game research for pirmitive cavepeople.", "minecraft:writable_book", 1);
+mods.ResearchStages.admin.triggerCategoryWriter("research_compendium", "02_research_basic_category", "Basic Research", "Improved research methods result in better research options.", "minecraft:writable_book", 2);
+mods.ResearchStages.admin.triggerEntryWriter();
